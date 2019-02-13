@@ -1,15 +1,5 @@
-# Fast Gaussian Filter. Question 6
+# Fast Gaussian Filter
 # Brendon Lyra 2/10/19
-
-
-'''
-Answering question for Fast Gaussian filter:
-
-The 1-D Gaussian operation (fast gaussian) is much faster than the 2-D Gaussian filter.
-This is due to the need to perform less computations in the 1-D version compared to 2-D,
-therefore increasing its speed, while maintaining the same performance, thanks to the 
-filter being able to be broken down, and re-built, into the x and y directions.
-'''
 
 from PIL import Image
 from scipy import ndimage

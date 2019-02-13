@@ -1,20 +1,5 @@
-# Canny Edge algorithm implementation. Last question
+# Canny Edge algorithm implementation
 # Brendon Lyra 2/10/19
-
-
-'''
-Answering questions for Canny edge detection:
-
--   The lower the sigma value, the better and more defined the edges seemed to be in the final image.
-    With sigma =1 the edges are well defined, and not thick, but with sigma=10 the edges are very thick,
-    and not well defined, making sigma=1 the better option since it is the lowest value.
-
--   The fast gaussian filter works best for the Canny edge detection algorithm shown below, especially with
-    the lower sigma value of 1. The lower sigma proved to be better for edge detection in both canny1/canny2.jpg
-    images used as input. the low/high threshold values proved to also be the best for edge detection in both 
-    input images used for this algorithm.
-
-'''
 
 from PIL import Image
 from scipy import ndimage
@@ -28,7 +13,6 @@ from copy import deepcopy, copy
 # img_arr[i][j][1] = g
 # img_arr[i][j][2] = b
 # img_arr[i][j][3] = 255
-
 
 def CannyAlgorithm(name, sigma):
 

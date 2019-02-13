@@ -1,13 +1,5 @@
-# Box Filtering. Question 1
+# Box Filtering
 # Brendon Lyra 2/10/19
-
-''' 
-Answering question for Box filter:
-
-The larger the kernel size for the box filter, the more blurry the convolution 
-between the kernel and image makes the resulting image, but it also slightly
-removes some noise from the image, but also blurs the edges. 
-'''
 
 from PIL import Image
 from scipy import ndimage

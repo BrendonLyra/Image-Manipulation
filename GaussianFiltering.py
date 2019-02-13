@@ -1,25 +1,5 @@
-# Gaussian Filtering. Question 3
+# Gaussian Filtering
 # Brendon Lyra 2/10/19
-
-'''
-Answering questions for Gaussian filter:
-
--   The different sigmas cause different blurring intensities on the images. The larger the sigma value,
-    the more blurry the resulting image will be.
-
--   The median filter removes salt/pepper noise better than the gaussian filter as it will eliminate the
-    high and low values of the pixels by picking the median of a block of pixels, but it will distort the 
-    edges and cause the image to look "blocky" much more than gaussian, which won't remove the noise as well, 
-    but will maintain the edges much better if a proper sized kernel and sigma value is used. The box filter 
-    won't remove the noise as well as either the gaussian or median, and it won't keep edges as well as gaussian
-    as it will only spread the values of the noise around, actually causing the noise to worsen the pixels around
-    it, and also blurring the image while not removing noise.
-    
--   you should use median filter with salt/pepper noise images as it will remove the extremes well.
-    the box filter will only blur the image, and can sometimes be used on images to approximate the gaussian filter.
-    the gaussian filter should be used to smooth images, and can also be used to remove some noise, and it is also
-    useful to use when running edge detection algorithms, as it can help identify edges more with a small blur.
-'''
 
 from PIL import Image
 from scipy import ndimage

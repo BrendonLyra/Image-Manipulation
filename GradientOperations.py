@@ -1,4 +1,4 @@
-# Gradient Operations. Question 4
+# Gradient Operations
 # Brendon Lyra 2/10/19
 
 from PIL import Image

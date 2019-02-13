@@ -1,18 +1,6 @@
-# Histogram function. Question 7
+# Histogram function
 # Brendon Lyra 2/10/19
 
-'''
-Answering question for Histogram function:
-
-The difference between the 3 different bins (256,128,64) is the x-axis in the resulting graph.
-With 256 bins, every pixel is accounted for in the histogram, by istelf.
-
-With 128 bins however, for every 2 pixels, only 1 bin exists, meaning that for the first 
-bar in the histogram, there are actually 2 values in that one bar (values 0-1), also increasing
-the y-values of the bars while halving the x-axis values.
-
-The same goes for 64 bins, except there are 4 pixels for every 1 bin (values 0-3, 4-6, etc...)
-'''
 
 from PIL import Image
 from scipy import ndimage

@@ -1,14 +1,5 @@
-# Sobel Filtering. Question 5
+# Sobel Filtering
 # Brendon Lyra 2/10/19
-
-'''
-Answering question for sobel filter:
-
-The resulting images are black where there are no sudden changes in 
-pixel values (non-edges), and it is white where there are sudden changes (edges).
-It is very succeptible to noise however, and will highlight the noise as an edge, 
-which is actually incorrect
-'''
 
 from PIL import Image
 from scipy import ndimage
